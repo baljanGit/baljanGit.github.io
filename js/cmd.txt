@@ -1,1 +1,1 @@
-json-server --watch UjraTervezes\db\db.json
+json-server --watch db\db.json

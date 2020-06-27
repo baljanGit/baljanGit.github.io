@@ -14,7 +14,7 @@ function startGetUsers() {
 
 document.querySelector("#getBtnData").addEventListener("click", startGetUsers);
 
-//Get data from server
+//Get data from server ())
 function getServerData(url) {
     let fetchOptions = {
         method: "GET",
@@ -191,6 +191,10 @@ function newUserRow(row) {
             name: k
         });
         td.appendChild(input);
+        if (k == "id") {
+            //    td.innerHTML = row[k];
+            input.setAttribute("readonly", true);
+        }
         tr.appendChild(td);
     }
 
